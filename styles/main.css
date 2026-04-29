@@ -1,0 +1,83 @@
+main {
+  background-color: rgb(255, 196, 235);
+  width: 100%;
+  padding-bottom: 500px;
+}
+
+.first-section, .second-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 80px 150px;
+  column-gap: 50px;
+  row-gap: 40px;
+}
+
+.second-section {
+  grid-template-columns: 1fr 2fr;
+}
+
+.first-section-text, .second-section-text {
+  background-color: rebeccapurple;
+} /* Smazat */
+
+.first-photo, .second-photo {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.title {
+  font-size: max(1vw + 2rem, 80%);
+  font-weight: 550;
+  min-width: 400px;
+}
+
+.text {
+  font-size: max(.65vw + .35rem, 80%);
+  margin-top: 20px;
+  font-weight: 450;
+}
+
+.interactive-button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 76px;
+  box-shadow: 1px 1px 3px black ;
+  margin-top: 25px;
+}
+
+.third-section .title p {
+  display: flex;
+  justify-content: center;
+}
+
+.third-section-boxes {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 70px;
+  justify-content: center;
+}
+
+.box {
+  background-color: wheat;
+  width: 100%;
+  height: 400px;
+  padding-left: 50px;
+}
+ 
+/*.box-icon {
+
+} */
+
+.box-title {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+/* @media (max-width: 1250px) {
+  .first-section, .second-section{
+    grid-template-columns: 1fr;
+  }
+}; */

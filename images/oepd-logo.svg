@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="400" viewBox="150 202.74609375 1360 432.75390625">
+  <g fill="#f5f5f5" font-family="Arial, Helvetica, sans-serif" font-size="190" font-weight="300" text-anchor="middle" dominant-baseline="middle">
+    <text x="320" y="360">O</text>
+    <text x="660" y="360">E</text>
+    <text x="1000" y="360">P</text>
+    <text x="1340" y="360">D</text>
+  </g>
+  <path d="M150 245v230m340-230v230m340-230v230m340-230v230m340-230v230" stroke="#6f7f84" stroke-width="7" opacity=".95"/>
+  <text x="800" y="625" fill="#f5f5f5" font-family="Arial, Helvetica, sans-serif" font-size="44" text-anchor="middle" word-spacing="15"><tspan font-weight="300">ORIENTATION</tspan><tspan font-weight="700">EVALUATION</tspan><tspan font-weight="300">PROPOSAL</tspan><tspan font-weight="700">DECISION</tspan></text>
+</svg>
