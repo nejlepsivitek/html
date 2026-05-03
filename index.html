@@ -19,13 +19,13 @@
         <img class="oepd-logo" src="images/OEPD-logo10.svg">
       </div>
       
-      <div class="middle-section">
-        <div class="menu"><a href="#second-section">Úvod</a></div>
-        <div class="menu"><a href="">Služby</a></div>
-        <div class="menu"><a href="">Výhody pro Vás</a></div>
-        <div class="menu"><a href="">Poptávka</a></div>
-        <div class="menu"><a href="">Kontakt</a></div>
-      </div>
+      <nav class="middle-section">
+        <div class="menu"><a href="#">Úvod</a></div>
+        <div class="menu"><a href="#Služby">Služby</a></div>
+        <div class="menu"><a href="#">Výhody pro Vás</a></div>
+        <div class="menu"><a href="#">Poptávka</a></div>
+        <div class="menu"><a href="#">Kontakt</a></div>
+      </nav>
       
       <div class="right-section">
         <img class="telephone-logo" src="images/telephone.svg">
@@ -37,7 +37,7 @@
 
     <main>
       <section class="first-section">
-        <div class="first-section-text-container">
+        <div class="first-section-text-container" style="grid-area: box-1;">
           <div class="first-section-title">
             <p>
               Společnost pro 
@@ -56,44 +56,45 @@
               podnikání.
             </p>
           </div>
-        <button class="first-section-button"><a href="">O NÁS</a></button>
-      </div>
-      <div class="first-photo-container">
+          <button class="first-section-button"><a href="">O NÁS</a></button>
+        </div>
+        <div class="first-photo-container" style="grid-area: box-2;">
         <img class="first-photo" src="pictures/photo-1.jpg">
-      </div>
-    </section>
-
-    <section class="second-section" id="second-section">
-      <img class="second-photo" src="pictures/photo-2.jpg">
-      
-      <div class="second-section-text-container">
-        <div class="second-section-title">
-          <p>
-            Naše cesta 
-          </p>
         </div>
-        <div class="second-section-text">
-          <p>
-            Stát se Vaším skutečným partnerem, ne pouhým dodavatelem. Řešit 
-            složité i jednoduché výzvy přesně tak, jak budete potřebovat. Být Vaší 
-            oporou, konzultantem, řešitelem a především profesionálním servisem s 
-            osobním přístupem. Fungovat tak, jak je nám vlastní ... 
-            ... s bystrou myslí a otevřeným srdcem. 
-          </p>
-        </div>
-        <button class="second-section-button"><a href="">SLUŽBY</a></button>
-        <button class="second-section-button"><a href="">Kontaktujte nás &#10132;</a></button>
-      </div>
-    </section>
+      </section>
 
-    <section class="third-section">
-      <div class="title">
+      <section class="second-section">  
+        <div class="second-photo-container" style="grid-area: box-2;">
+          <img class="second-photo" src="pictures/photo-2.jpg">
+        </div>
+        <div class="second-section-text-container" style="grid-area: box-1;">
+          <div class="second-section-title">
+            <p>
+              Naše cesta 
+            </p>
+          </div>
+          <div class="second-section-text">
+            <p>
+              Stát se Vaším skutečným partnerem, ne pouhým dodavatelem. Řešit 
+              složité i jednoduché výzvy přesně tak, jak budete potřebovat. Být Vaší 
+              oporou, konzultantem, řešitelem a především profesionálním servisem s 
+              osobním přístupem. Fungovat tak, jak je nám vlastní ... 
+              ... s bystrou myslí a otevřeným srdcem. 
+            </p>
+          </div>
+          <button class="second-section-button"><a href="">SLUŽBY</a></button>
+          <button class="second-section-button"><a href="">Kontaktujte nás <img src="icons/arrow-icon.png"></a></button>
+        </div>
+      </section >
+    
+    <section class="third-section" id="Služby" >
+      <div class="third-section-title">
         <p>
           Portfolio služeb
         </p>
       </div>
       <div class="third-section-boxes">
-        <div class="box">
+        <div class="third-section-box">
           <div class="box-icon">
             <img src="icons/database-icon.png">
           </div>
@@ -118,7 +119,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="third-section-box">
           <div class="box-icon">
             <img src="icons/scale-icon.png">
           </div>
@@ -128,7 +129,7 @@
               procesů
             </p>
               
-            </div>
+          </div>
             <div class="box-text">
               <p>
               Zpracujeme hlavní okruhy HR činností ve
@@ -140,11 +141,11 @@
               ohodnocení systému odměňování a
               motivace
               rozvoje, vzdělávání a motivace
-            </p>
-          </div>
+              </p>
+            </div>
         </div>
 
-        <div class="box">
+        <div class="third-section-box">
           <div class="box-icon">
             <img src="icons/money-icon.png">
           </div>
@@ -167,7 +168,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="third-section-box">
           <div class="box-icon">
             <img src="icons/linechart-icon.png">
           </div>
@@ -186,7 +187,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="third-section-box">
           <div class="box-icon">
             <img src="icons/magnifier-glass-icon.png">
           </div>
@@ -211,7 +212,7 @@
           </div>
         </div>
         
-        <div class="box">
+        <div class="third-section-box">
           <div class="box-icon">
             <img src="icons/robot-icon.png">
           </div>
@@ -234,10 +235,12 @@
             </p>
           </div>
         </div>
-
       </div>
     </section>
-  </div>
 
-</body>
+    <section class="forth-section">
+
+
+    </section>
+  </body> 
 </html>

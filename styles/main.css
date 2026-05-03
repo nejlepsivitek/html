@@ -6,7 +6,8 @@ main {
 
 .first-section, .second-section {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "box-1 box-1 box-1 box-2 box-2";
   padding: 80px 10%;
   column-gap: 50px;
   row-gap: 40px;
@@ -15,16 +16,16 @@ main {
 
 .second-section {
   color: rgb(230, 230, 230);
-  grid-template-columns: 1fr 2fr;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "box-1 box-2 box-2";
   background-color: rgb(15, 15, 15);
   align-items: center;
 }
 
 .first-section-text-container, .second-section-text-container {
-  padding: 5% ;
   max-width: 80%;
-  /* background-color: rebeccapurple; Smazat */
   min-width: 100px;
+  padding: 5%;
 } 
 
 .first-section-title, .second-section-title {
@@ -41,6 +42,7 @@ main {
 .first-photo-container, .second-photo-container {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .first-photo, .second-photo {
@@ -53,31 +55,38 @@ main {
 button a {
   text-decoration: none;
   color: inherit;
+  font-size: max(.5vw + .3rem, .9vw)
 }
 
 .first-section-button, .second-section-button {
-  background-color: black;
+  background-color: rgb(15, 15, 15);
   color: rgb(230, 230, 230);
   border: none;
-  width: 150px;
+  width: 25%;
   height: 50px;
-  box-shadow: 0 0 3px black ;
+  box-shadow: 0 0 3px rgb(15, 15, 15) ;
   border-radius: 76px;
   margin-top: 25px;
+
+  white-space: nowrap;
 }
 
 .second-section-button {
   background-color: rgb(230, 230, 230);
   box-shadow: 0 0 3px rgb(230, 230, 230);
-  color: black;
+  color: rgb(15, 15, 15);
   margin-right: 1.5rem;
-
 }
 
-.third-section .title p {
+.second-section-button img {
+  width: 1.1em;
+}
+
+.third-section-title {
   display: flex;
   justify-content: center;
   align-self: center;
+  font-size: max(.7vw + .7rem, 2.5vw);
 }
 
 .third-section-boxes {
@@ -93,11 +102,12 @@ button a {
   margin: 20px 0 ;
 }
 
-.box {
-  background-color: wheat;
+.third-section-box {
+  background-color: rgb(250, 250, 250);
   padding: 50px;  
+  padding-bottom: 35px;
   border-radius: 10px;
-  box-shadow: 1px 2px 5px rgb(92, 92, 92);  
+  box-shadow: 1px 2px 4px rgb(165, 165, 165);  
 }
  
 .box-icon {
@@ -118,8 +128,11 @@ button a {
 
 } 
 
-/* @media (max-width: 1250px) {
+
+@media (max-width: 1440px) {
   .first-section, .second-section{
-    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "box-1"
+    "box-2"
   }
-}; */
+}
