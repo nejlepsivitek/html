@@ -128,11 +128,28 @@ button a {
 
 } 
 
+.forth-section {
+  color: rgb(230, 230, 230);
+  background-color: rgb(15, 15, 15);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forth-section-text-container {
+  /* display: flex; */
+  justify-content: center; 
+  align-items: center;
+}
 
 @media (max-width: 1440px) {
-  .first-section, .second-section{
+  .first-section {
     grid-template-areas: 
     "box-1"
     "box-2"
+  }
+  .second-section {
+    grid-template-areas:
+    "box-2"
+    "box-1"
   }
 }
