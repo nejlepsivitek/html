@@ -87,7 +87,7 @@
   
 } */
 
-@media (max-width: 750px) {
+@media (max-width: 80rem) {
   .header {
     display: flex;
     height: 100px;
